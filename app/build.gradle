@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'kotlin-android-extensions'
 }
 
 android {
@@ -32,6 +31,11 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    // enable viewBinding
+    buildFeatures {
+        viewBinding true
+
+    }
 }
 
 dependencies {
@@ -47,6 +51,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
     // androidx.activity:activity-ktx by viewModels()
     // androidx.fragment:fragment-ktx 内置了 初始化viewModel变量的方法 by activityViewModels()
     // implementation "androidx.activity:activity-ktx:1.1.0"

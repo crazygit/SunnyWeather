@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SunnyWeather</string>
+    <string name="separator">|</string>
+    <string name="forecast">预报</string>
+    <string name="sky_icon">sky icon</string>
+    <string name="life_index">生活指数</string>
+    <string name="cold">感冒</string>
+    <string name="dress">穿衣</string>
+    <string name="carwashing">洗车</string>
 </resources>
